@@ -1,0 +1,8 @@
+../tinyml_api/internally_implemented.c:50:6:ee_serial_callback	3
+../tinyml_api/internally_implemented.c:96:6:ee_benchmark_initialize	1
+../tinyml_api/internally_implemented.c:175:6:ee_infer	3
+../tinyml_api/internally_implemented.c:288:6:ee_hexdec	6
+../tinyml_api/internally_implemented.c:196:15:ee_buffer_parse	17
+../tinyml_api/internally_implemented.c:107:15:ee_profile_parse	10
+../tinyml_api/internally_implemented.c:72:6:ee_serial_command_parser_callback	5
+../tinyml_api/internally_implemented.c:320:8:ee_get_buffer	2

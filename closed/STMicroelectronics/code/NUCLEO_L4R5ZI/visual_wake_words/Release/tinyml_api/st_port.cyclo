@@ -1,0 +1,11 @@
+../tinyml_api/st_port.c:33:7:Deq	1
+../tinyml_api/st_port.c:40:8:QuantizeFloatToInt8	1
+../tinyml_api/st_port.c:58:6:AI_Init	1
+../tinyml_api/st_port.c:66:6:AI_Run	1
+../tinyml_api/st_port.c:74:6:US_Delay	2
+../tinyml_api/st_port.c:80:6:clear_Timestamp_Port	1
+../tinyml_api/st_port.c:85:6:set_Timestamp_Port	1
+../tinyml_api/st_port.c:91:6:USART3_IRQHandler	1
+../tinyml_api/st_port.c:108:6:LPUART1_IRQHandler	1
+../tinyml_api/st_port.c:122:6:rxSetInterrupt	2
+../tinyml_api/st_port.c:136:6:rxInit	1
