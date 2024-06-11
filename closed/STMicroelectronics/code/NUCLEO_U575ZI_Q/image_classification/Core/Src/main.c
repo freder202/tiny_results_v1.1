@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "submitter_implemented.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,16 +103,27 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_CRC_Init();
-  MX_DCACHE1_Init();
-  MX_ICACHE_Init();
-  MX_LPUART1_UART_Init();
-  MX_USART1_UART_Init();
-  MX_TIM5_Init();
-  /* USER CODE BEGIN 2 */
+    /* USER CODE BEGIN 2 */
+    MX_GPIO_Init();
+    MX_CRC_Init();
+    MX_DCACHE1_Init();
+    MX_ICACHE_Init();
+  #if EE_CFG_ENERGY_MODE == 1
+    MX_LPUART1_UART_Init();
+  #else
+    MX_USART1_UART_Init();
+  #endif
 
-  /* USER CODE END 2 */
+  #if EE_CFG_ENERGY_MODE == 0
+    __HAL_UART_ENABLE_IT(&huart1,UART_IT_RXNE);
+  #else
+    __HAL_UART_ENABLE_IT(&hlpuart1,UART_IT_RXNE);
+  #endif
+
+    MX_TIM5_Init();
+    HAL_TIM_Base_Start(&htim5);
+    ee_benchmark_initialize();
+    /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
