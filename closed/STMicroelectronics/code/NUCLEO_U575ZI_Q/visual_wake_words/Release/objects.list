@@ -31,3 +31,6 @@
 "./X-CUBE-AI/App/network.o"
 "./X-CUBE-AI/App/network_data.o"
 "./X-CUBE-AI/App/network_data_params.o"
+"./tinyml_api/internally_implemented.o"
+"./tinyml_api/st_port.o"
+"./tinyml_api/submitter_implemented.o"

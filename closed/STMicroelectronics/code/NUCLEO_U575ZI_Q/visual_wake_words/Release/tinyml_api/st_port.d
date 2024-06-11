@@ -1,5 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
- ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h \
+tinyml_api/st_port.o: ../tinyml_api/st_port.c ../tinyml_api/st_port.h \
+ ../Core/Inc/main.h ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h \
  ../Core/Inc/stm32u5xx_hal_conf.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_rcc.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_def.h \
@@ -31,8 +31,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
- C:/Users/fred/Desktop/finale/tiny_results_v1.1/closed/STMicroelectronics/code/NUCLEO_U575ZI_Q/visual_wake_words/tinyml_api/submitter_implemented.h \
- C:/Users/fred/Desktop/finale/tiny_results_v1.1/closed/STMicroelectronics/code/NUCLEO_U575ZI_Q/visual_wake_words/tinyml_api/internally_implemented.h
+ ../Middlewares/ST/AI/Inc/ai_platform.h ../X-CUBE-AI/App/network.h \
+ ../X-CUBE-AI/App/network_config.h ../X-CUBE-AI/App/network_data.h \
+ ../X-CUBE-AI/App/network_data_params.h \
+ ../tinyml_api/internally_implemented.h \
+ ../tinyml_api/submitter_implemented.h
+../tinyml_api/st_port.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h:
 ../Core/Inc/stm32u5xx_hal_conf.h:
@@ -66,5 +70,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_uart_ex.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
-C:/Users/fred/Desktop/finale/tiny_results_v1.1/closed/STMicroelectronics/code/NUCLEO_U575ZI_Q/visual_wake_words/tinyml_api/submitter_implemented.h:
-C:/Users/fred/Desktop/finale/tiny_results_v1.1/closed/STMicroelectronics/code/NUCLEO_U575ZI_Q/visual_wake_words/tinyml_api/internally_implemented.h:
+../Middlewares/ST/AI/Inc/ai_platform.h:
+../X-CUBE-AI/App/network.h:
+../X-CUBE-AI/App/network_config.h:
+../X-CUBE-AI/App/network_data.h:
+../X-CUBE-AI/App/network_data_params.h:
+../tinyml_api/internally_implemented.h:
+../tinyml_api/submitter_implemented.h:
