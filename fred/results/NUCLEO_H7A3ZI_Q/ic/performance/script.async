@@ -1,0 +1,32 @@
+[
+    {
+        cmd: 'umount'
+    },
+    {
+        cmd: 'mountc dut dut'
+    },
+    {
+        cmd: 'dut profile'
+    },
+    {
+        cmd: 'version'
+    },
+    {
+        cmd: 'bm cfg ulp-mlperf'
+    },
+    {
+        cmd: 'dut profile'
+    },
+    {
+        cmd: 'dut timestamp'
+    },
+    {
+        cmd: 'bload dut "C:\\Users\\fred\\eembc\\runner\\benchmarks\\ulp-mlperf\\datasets\\ic01\\emu_s_002009.bin"',
+        ms: 49152
+    },
+    {
+        cmd: 'dut infer 700 10',
+        ms: -1,
+        ack: /dut.?: m-ready/
+    }
+]
